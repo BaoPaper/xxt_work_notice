@@ -7,7 +7,7 @@ req = requests.Session()
 req.headers = {
     "Accept-Encoding": "gzip",
     "Accept-Language": "zh-Hans-CN;q=1, zh-Hant-CN;q=0.9",
-    "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_2_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 com.ssreader.ChaoXingStudy/ChaoXingStudy_3_4.8_ios_phone_202012052220_56 (@Kalimdor)_12787186548451577248"
+    "User-Agent": "Mozilla/5.0 (Linux; Android 14; 22081212C Build/UKQ1.230917.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/125.0.6422.165 Mobile Safari/537.36 (schild:0fe764a60e0f630ff014bf7193f52459) (device:22081212C) Language/zh_CN com.chaoxing.mobile/ChaoXingStudy_3_6.3.0_android_phone_1056_234 (@Kalimdor)_5530f0170cea4377909633c047c5af68"
 }
 
 def get_course():
@@ -94,7 +94,7 @@ if __name__ == "__main__":
                 req.headers["Cookie"] = mycookie
                 print(account,"登录成功")
                 # 获取课程信息
-                # get_course()
+                get_course()
                 # 获取作业信息
                 get_homework(user)
                 # 获取考试信息
